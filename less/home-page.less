@@ -1,9 +1,26 @@
 .home {
+    header {
+        border-bottom: 2px dashed #C0C0C0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        @media @phone {
+            align-items: center;
+
+        }
+
+    }
+
     .content-section {
         margin: 30px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media @phone {
+            .phone-col-layout;
+            width: 100%;
+        }
 
         .text-content {
             width: 48%;
@@ -16,6 +33,7 @@
 
             img {
                 border-radius: 50px;
+
             }
         }
     }
@@ -32,6 +50,12 @@
         .img-content {
             padding-right: 1%;
             padding-left: 0;
+        }
+
+        @media @phone {
+            width: 100%;
+            padding-left: 0;
+            order: 2;
         }
     }
 
@@ -50,6 +74,13 @@
         display: flex;
         justify-content: space-between;
 
+        @media @phone {
+            .phone-col-layout;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            align-items: center;
+        }
+
         .destination {
             width: 30%;
             margin-bottom: 30px;
@@ -60,13 +91,10 @@
 
 .btn {
     .button(20rem, @eastern-blue, @white);
+
+    @media @phone {
+        .phone-col-layout;
+        margin-left: -35px;
+
+    }
 }
-
-header {
-  border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 20px;
-}
-
-
-
-
