@@ -359,12 +359,3 @@ body .nav nav a {
     align-items: center;
   }
 }
-.fun-bus {
-  margin-left: 28%;
-  width: 48%;
-}
-@media (max-width: 500px) {
-  .fun-bus {
-    width: 1150%;
-  }
-}
