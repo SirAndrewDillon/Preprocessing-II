@@ -2,10 +2,24 @@
     header {
         border-bottom: 2px dashed #C0C0C0;
         padding-bottom: 20px;
-        padding-top: 20px;
+
+
+        h2 {
+            margin-top: 2rem;
+        }
+
+        p {
+            padding-bottom: 2rem;
+
+        }
+
 
         @media @phone {
+            width: 100%;
             align-items: center;
+            margin: 20px 25px;
+            display: flex;
+            flex-wrap: wrap;
 
         }
 
@@ -14,29 +28,32 @@
     .content-section {
         margin: 30px 0;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
 
         @media @phone {
             .phone-col-layout;
             width: 100%;
+            padding: 20px;
         }
 
         .text-content {
-            width: 48%;
-            padding-right: 1%;
+            width: 50%;
+            padding: 3%;
+
         }
 
         .img-content {
-            width: 48%;
-            padding-left: 1%;
+            width: 50%;
+            padding: 3%;
 
             img {
-                border-radius: 50px;
+                border-radius: 10px;
+              }
+          }
+      }
 
-            }
-        }
-    }
+
+
 
     .inverse-content {
         padding-bottom: 30px;
@@ -44,27 +61,29 @@
 
         .text-content {
             padding-left: 1%;
-            padding-right: 0;
+            padding-right: 1%;
         }
 
         .img-content {
-            padding-right: 1%;
+            padding-right: 0;
             padding-left: 0;
-        }
-
-        @media @phone {
-            width: 100%;
-            padding-left: 0;
-            order: 2;
         }
     }
 
     .content-destination {
-        width: 75%;
+        width: 100%;
         margin: 0 auto 30px;
 
         img {
-            border-radius: 10px;
+            border-radius: 20px;
+            margin-left: 75px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+          @media @phone {
+            width: 100%;
+            margin-right: 22%;
+          }
         }
     }
 
@@ -76,14 +95,22 @@
 
         @media @phone {
             .phone-col-layout;
-            padding-bottom: 30px;
-            padding-top: 30px;
+            padding-bottom: 10px;
+            padding-top: 10px;
             align-items: center;
         }
 
         .destination {
             width: 30%;
             margin-bottom: 30px;
+
+            @media @phone {
+                .phone-col-layout;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                align-content: center;
+            }
+
         }
     }
 }
@@ -94,7 +121,7 @@
 
     @media @phone {
         .phone-col-layout;
-        margin-left: -35px;
+        width: 90%;
 
     }
 }
